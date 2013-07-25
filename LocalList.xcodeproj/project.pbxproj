@@ -64,6 +64,7 @@
 		ABDF3EAA17A17C70004BC5BD /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewController.m; sourceTree = "<group>"; };
 		ABDF3EAC17A18414004BC5BD /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
 		ABDF3EAD17A18414004BC5BD /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+		ABDF3EAF17A196F5004BC5BD /* LocalList 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LocalList 3.xcdatamodel"; sourceTree = "<group>"; };
 		ABF4C88E17A0CF4600B23C93 /* PlaceDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetailTableViewController.h; sourceTree = "<group>"; };
 		ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetailTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -381,10 +382,11 @@
 		ABD8747217A055F1000167F7 /* LocalList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				ABDF3EAF17A196F5004BC5BD /* LocalList 3.xcdatamodel */,
 				ABDF3EA517A176A6004BC5BD /* LocalList 2.xcdatamodel */,
 				ABD8747317A055F1000167F7 /* LocalList.xcdatamodel */,
 			);
-			currentVersion = ABDF3EA517A176A6004BC5BD /* LocalList 2.xcdatamodel */;
+			currentVersion = ABDF3EAF17A196F5004BC5BD /* LocalList 3.xcdatamodel */;
 			path = LocalList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

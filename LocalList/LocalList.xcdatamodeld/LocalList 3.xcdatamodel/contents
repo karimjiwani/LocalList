@@ -4,11 +4,7 @@
         <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="List" syncable="YES">
-        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="quantity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="storeReference" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="toBuy" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="attribute" optional="YES" syncable="YES"/>
     </entity>
     <entity name="Stores" representedClassName="Stores" syncable="YES">
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
@@ -24,6 +20,6 @@
     <elements>
         <element name="Items" positionX="-1577" positionY="198" width="128" height="60"/>
         <element name="Stores" positionX="-1431" positionY="198" width="128" height="178"/>
-        <element name="List" positionX="-1719" positionY="198" width="128" height="118"/>
+        <element name="List" positionX="160" positionY="192" width="128" height="60"/>
     </elements>
 </model>
