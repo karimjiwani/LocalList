@@ -18,6 +18,13 @@
 		ABD8746F17A055F1000167F7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD8746E17A055F1000167F7 /* Default@2x.png */; };
 		ABD8747117A055F1000167F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD8747017A055F1000167F7 /* Default-568h@2x.png */; };
 		ABD8747417A055F1000167F7 /* LocalList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABD8747217A055F1000167F7 /* LocalList.xcdatamodeld */; };
+		ABD8747B17A05659000167F7 /* MainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD8747A17A05659000167F7 /* MainStoryBoard.storyboard */; };
+		ABD8747E17A05ACB000167F7 /* Stores.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8747D17A05ACB000167F7 /* Stores.m */; };
+		ABD8748317A05F37000167F7 /* StoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8748217A05F37000167F7 /* StoresTableViewController.m */; };
+		ABD8748617A06C28000167F7 /* PlaceSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8748517A06C28000167F7 /* PlaceSearchTableViewController.m */; };
+		ABD8748917A06EF7000167F7 /* PlaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8748817A06EF7000167F7 /* PlaceService.m */; };
+		ABD8748D17A07C15000167F7 /* Places.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8748C17A07C15000167F7 /* Places.m */; };
+		ABF4C89017A0CF4600B23C93 /* PlaceDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,19 @@
 		ABD8746E17A055F1000167F7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		ABD8747017A055F1000167F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ABD8747317A055F1000167F7 /* LocalList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalList.xcdatamodel; sourceTree = "<group>"; };
+		ABD8747A17A05659000167F7 /* MainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryBoard.storyboard; sourceTree = "<group>"; };
+		ABD8747C17A05ACB000167F7 /* Stores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stores.h; sourceTree = "<group>"; };
+		ABD8747D17A05ACB000167F7 /* Stores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stores.m; sourceTree = "<group>"; };
+		ABD8748117A05F37000167F7 /* StoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoresTableViewController.h; sourceTree = "<group>"; };
+		ABD8748217A05F37000167F7 /* StoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoresTableViewController.m; sourceTree = "<group>"; };
+		ABD8748417A06C28000167F7 /* PlaceSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceSearchTableViewController.h; sourceTree = "<group>"; };
+		ABD8748517A06C28000167F7 /* PlaceSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchTableViewController.m; sourceTree = "<group>"; };
+		ABD8748717A06EF7000167F7 /* PlaceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceService.h; sourceTree = "<group>"; };
+		ABD8748817A06EF7000167F7 /* PlaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceService.m; sourceTree = "<group>"; };
+		ABD8748B17A07C15000167F7 /* Places.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Places.h; sourceTree = "<group>"; };
+		ABD8748C17A07C15000167F7 /* Places.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Places.m; sourceTree = "<group>"; };
+		ABF4C88E17A0CF4600B23C93 /* PlaceDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetailTableViewController.h; sourceTree = "<group>"; };
+		ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetailTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +104,13 @@
 		ABD8746017A055F1000167F7 /* LocalList */ = {
 			isa = PBXGroup;
 			children = (
-				ABD8746917A055F1000167F7 /* AppDelegate.h */,
-				ABD8746A17A055F1000167F7 /* AppDelegate.m */,
-				ABD8747217A055F1000167F7 /* LocalList.xcdatamodeld */,
+				ABD8748A17A07BF6000167F7 /* DataObjects */,
+				ABD8748017A05ED0000167F7 /* ViewControllers */,
+				ABD8747F17A05EAD000167F7 /* CoreData */,
 				ABD8746117A055F1000167F7 /* Supporting Files */,
+				ABD8747A17A05659000167F7 /* MainStoryBoard.storyboard */,
+				ABD8748717A06EF7000167F7 /* PlaceService.h */,
+				ABD8748817A06EF7000167F7 /* PlaceService.m */,
 			);
 			path = LocalList;
 			sourceTree = "<group>";
@@ -95,6 +118,8 @@
 		ABD8746117A055F1000167F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ABD8746917A055F1000167F7 /* AppDelegate.h */,
+				ABD8746A17A055F1000167F7 /* AppDelegate.m */,
 				ABD8746217A055F1000167F7 /* LocalList-Info.plist */,
 				ABD8746317A055F1000167F7 /* InfoPlist.strings */,
 				ABD8746617A055F1000167F7 /* main.m */,
@@ -104,6 +129,38 @@
 				ABD8747017A055F1000167F7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABD8747F17A05EAD000167F7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				ABD8747217A055F1000167F7 /* LocalList.xcdatamodeld */,
+				ABD8747C17A05ACB000167F7 /* Stores.h */,
+				ABD8747D17A05ACB000167F7 /* Stores.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		ABD8748017A05ED0000167F7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABD8748117A05F37000167F7 /* StoresTableViewController.h */,
+				ABD8748217A05F37000167F7 /* StoresTableViewController.m */,
+				ABD8748417A06C28000167F7 /* PlaceSearchTableViewController.h */,
+				ABD8748517A06C28000167F7 /* PlaceSearchTableViewController.m */,
+				ABF4C88E17A0CF4600B23C93 /* PlaceDetailTableViewController.h */,
+				ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ABD8748A17A07BF6000167F7 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				ABD8748B17A07C15000167F7 /* Places.h */,
+				ABD8748C17A07C15000167F7 /* Places.m */,
+			);
+			name = DataObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +218,7 @@
 				ABD8746D17A055F1000167F7 /* Default.png in Resources */,
 				ABD8746F17A055F1000167F7 /* Default@2x.png in Resources */,
 				ABD8747117A055F1000167F7 /* Default-568h@2x.png in Resources */,
+				ABD8747B17A05659000167F7 /* MainStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +232,12 @@
 				ABD8746717A055F1000167F7 /* main.m in Sources */,
 				ABD8746B17A055F1000167F7 /* AppDelegate.m in Sources */,
 				ABD8747417A055F1000167F7 /* LocalList.xcdatamodeld in Sources */,
+				ABD8747E17A05ACB000167F7 /* Stores.m in Sources */,
+				ABD8748317A05F37000167F7 /* StoresTableViewController.m in Sources */,
+				ABD8748617A06C28000167F7 /* PlaceSearchTableViewController.m in Sources */,
+				ABD8748917A06EF7000167F7 /* PlaceService.m in Sources */,
+				ABD8748D17A07C15000167F7 /* Places.m in Sources */,
+				ABF4C89017A0CF4600B23C93 /* PlaceDetailTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +314,7 @@
 		ABD8747817A055F1000167F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalList/LocalList-Prefix.pch";
 				INFOPLIST_FILE = "LocalList/LocalList-Info.plist";
@@ -261,6 +326,7 @@
 		ABD8747917A055F1000167F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalList/LocalList-Prefix.pch";
 				INFOPLIST_FILE = "LocalList/LocalList-Info.plist";
@@ -288,6 +354,7 @@
 				ABD8747917A055F1000167F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

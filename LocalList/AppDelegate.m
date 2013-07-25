@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "StoresTableViewController.h"
 
 @implementation AppDelegate
 
@@ -16,10 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    UITabBarController *tabBarController = (UITabBarController *) self.window.rootViewController;
+    UINavigationController *navigationController = (UINavigationController *) [[tabBarController viewControllers] objectAtIndex:0];
+    StoresTableViewController *storeTableViewController = (StoresTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    storeTableViewController.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 
