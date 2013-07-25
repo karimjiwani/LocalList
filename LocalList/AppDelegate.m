@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "StoresTableViewController.h"
-
+#import "ItemsTableViewController.h"
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -21,6 +21,9 @@
     UINavigationController *navigationController = (UINavigationController *) [[tabBarController viewControllers] objectAtIndex:0];
     StoresTableViewController *storeTableViewController = (StoresTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
     storeTableViewController.managedObjectContext = self.managedObjectContext;
+    navigationController = (UINavigationController *)[[tabBarController viewControllers] objectAtIndex:1];
+    ItemsTableViewController *itemsTableViewController = (ItemsTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    itemsTableViewController.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 
@@ -108,7 +111,8 @@
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption, [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          

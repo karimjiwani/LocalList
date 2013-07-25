@@ -24,6 +24,9 @@
 		ABD8748617A06C28000167F7 /* PlaceSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8748517A06C28000167F7 /* PlaceSearchTableViewController.m */; };
 		ABD8748917A06EF7000167F7 /* PlaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8748817A06EF7000167F7 /* PlaceService.m */; };
 		ABD8748D17A07C15000167F7 /* Places.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8748C17A07C15000167F7 /* Places.m */; };
+		ABDF3EA817A17BCB004BC5BD /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDF3EA717A17BCB004BC5BD /* Items.m */; };
+		ABDF3EAB17A17C70004BC5BD /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDF3EAA17A17C70004BC5BD /* ItemsTableViewController.m */; };
+		ABDF3EAE17A18414004BC5BD /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDF3EAD17A18414004BC5BD /* ItemViewController.m */; };
 		ABF4C89017A0CF4600B23C93 /* PlaceDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,13 @@
 		ABD8748817A06EF7000167F7 /* PlaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceService.m; sourceTree = "<group>"; };
 		ABD8748B17A07C15000167F7 /* Places.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Places.h; sourceTree = "<group>"; };
 		ABD8748C17A07C15000167F7 /* Places.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Places.m; sourceTree = "<group>"; };
+		ABDF3EA517A176A6004BC5BD /* LocalList 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LocalList 2.xcdatamodel"; sourceTree = "<group>"; };
+		ABDF3EA617A17BCB004BC5BD /* Items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = "<group>"; };
+		ABDF3EA717A17BCB004BC5BD /* Items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Items.m; sourceTree = "<group>"; };
+		ABDF3EA917A17C70004BC5BD /* ItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsTableViewController.h; sourceTree = "<group>"; };
+		ABDF3EAA17A17C70004BC5BD /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewController.m; sourceTree = "<group>"; };
+		ABDF3EAC17A18414004BC5BD /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		ABDF3EAD17A18414004BC5BD /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		ABF4C88E17A0CF4600B23C93 /* PlaceDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetailTableViewController.h; sourceTree = "<group>"; };
 		ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetailTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				ABD8747217A055F1000167F7 /* LocalList.xcdatamodeld */,
+				ABDF3EA617A17BCB004BC5BD /* Items.h */,
+				ABDF3EA717A17BCB004BC5BD /* Items.m */,
 				ABD8747C17A05ACB000167F7 /* Stores.h */,
 				ABD8747D17A05ACB000167F7 /* Stores.m */,
 			);
@@ -150,6 +162,10 @@
 				ABD8748517A06C28000167F7 /* PlaceSearchTableViewController.m */,
 				ABF4C88E17A0CF4600B23C93 /* PlaceDetailTableViewController.h */,
 				ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */,
+				ABDF3EA917A17C70004BC5BD /* ItemsTableViewController.h */,
+				ABDF3EAA17A17C70004BC5BD /* ItemsTableViewController.m */,
+				ABDF3EAC17A18414004BC5BD /* ItemViewController.h */,
+				ABDF3EAD17A18414004BC5BD /* ItemViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -238,6 +254,9 @@
 				ABD8748917A06EF7000167F7 /* PlaceService.m in Sources */,
 				ABD8748D17A07C15000167F7 /* Places.m in Sources */,
 				ABF4C89017A0CF4600B23C93 /* PlaceDetailTableViewController.m in Sources */,
+				ABDF3EA817A17BCB004BC5BD /* Items.m in Sources */,
+				ABDF3EAB17A17C70004BC5BD /* ItemsTableViewController.m in Sources */,
+				ABDF3EAE17A18414004BC5BD /* ItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,9 +381,10 @@
 		ABD8747217A055F1000167F7 /* LocalList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				ABDF3EA517A176A6004BC5BD /* LocalList 2.xcdatamodel */,
 				ABD8747317A055F1000167F7 /* LocalList.xcdatamodel */,
 			);
-			currentVersion = ABD8747317A055F1000167F7 /* LocalList.xcdatamodel */;
+			currentVersion = ABDF3EA517A176A6004BC5BD /* LocalList 2.xcdatamodel */;
 			path = LocalList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
