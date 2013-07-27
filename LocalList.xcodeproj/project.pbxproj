@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB47B27C17A1B73700B3F382 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = AB47B27B17A1B73700B3F382 /* List.m */; };
+		AB47B27F17A1B82B00B3F382 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB47B27E17A1B82B00B3F382 /* ListTableViewController.m */; };
 		ABD8745917A055F1000167F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD8745817A055F1000167F7 /* UIKit.framework */; };
 		ABD8745B17A055F1000167F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD8745A17A055F1000167F7 /* Foundation.framework */; };
 		ABD8745D17A055F1000167F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD8745C17A055F1000167F7 /* CoreGraphics.framework */; };
@@ -27,10 +29,17 @@
 		ABDF3EA817A17BCB004BC5BD /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDF3EA717A17BCB004BC5BD /* Items.m */; };
 		ABDF3EAB17A17C70004BC5BD /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDF3EAA17A17C70004BC5BD /* ItemsTableViewController.m */; };
 		ABDF3EAE17A18414004BC5BD /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDF3EAD17A18414004BC5BD /* ItemViewController.m */; };
+		ABE70A3217A313EA00506C90 /* ListItemDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE70A3117A313EA00506C90 /* ListItemDetailTableViewController.m */; };
+		ABE70A3617A31E1F00506C90 /* SelectItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE70A3517A31E1F00506C90 /* SelectItemTableViewController.m */; };
+		ABE70A3917A31E3E00506C90 /* SelectStoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE70A3817A31E3E00506C90 /* SelectStoreTableViewController.m */; };
 		ABF4C89017A0CF4600B23C93 /* PlaceDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB47B27A17A1B73700B3F382 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		AB47B27B17A1B73700B3F382 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		AB47B27D17A1B82B00B3F382 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		AB47B27E17A1B82B00B3F382 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 		ABD8745517A055F1000167F7 /* LocalList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD8745817A055F1000167F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ABD8745A17A055F1000167F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +73,13 @@
 		ABDF3EAA17A17C70004BC5BD /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewController.m; sourceTree = "<group>"; };
 		ABDF3EAC17A18414004BC5BD /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
 		ABDF3EAD17A18414004BC5BD /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
-		ABDF3EAF17A196F5004BC5BD /* LocalList 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LocalList 3.xcdatamodel"; sourceTree = "<group>"; };
+		ABDF3EAF17A196F5004BC5BD /* LocalList 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LocalList 3.xcdatamodel"; sourceTree = "<group>"; };
+		ABE70A3017A313EA00506C90 /* ListItemDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemDetailTableViewController.h; sourceTree = "<group>"; };
+		ABE70A3117A313EA00506C90 /* ListItemDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItemDetailTableViewController.m; sourceTree = "<group>"; };
+		ABE70A3417A31E1F00506C90 /* SelectItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItemTableViewController.h; sourceTree = "<group>"; };
+		ABE70A3517A31E1F00506C90 /* SelectItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItemTableViewController.m; sourceTree = "<group>"; };
+		ABE70A3717A31E3E00506C90 /* SelectStoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectStoreTableViewController.h; sourceTree = "<group>"; };
+		ABE70A3817A31E3E00506C90 /* SelectStoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectStoreTableViewController.m; sourceTree = "<group>"; };
 		ABF4C88E17A0CF4600B23C93 /* PlaceDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetailTableViewController.h; sourceTree = "<group>"; };
 		ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetailTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,13 +130,14 @@
 		ABD8746017A055F1000167F7 /* LocalList */ = {
 			isa = PBXGroup;
 			children = (
-				ABD8748A17A07BF6000167F7 /* DataObjects */,
-				ABD8748017A05ED0000167F7 /* ViewControllers */,
+				ABD8746917A055F1000167F7 /* AppDelegate.h */,
+				ABD8746A17A055F1000167F7 /* AppDelegate.m */,
 				ABD8747F17A05EAD000167F7 /* CoreData */,
-				ABD8746117A055F1000167F7 /* Supporting Files */,
+				ABD8748A17A07BF6000167F7 /* DataObjects */,
 				ABD8747A17A05659000167F7 /* MainStoryBoard.storyboard */,
-				ABD8748717A06EF7000167F7 /* PlaceService.h */,
-				ABD8748817A06EF7000167F7 /* PlaceService.m */,
+				ABE70A3317A3195B00506C90 /* Services */,
+				ABD8746117A055F1000167F7 /* Supporting Files */,
+				ABD8748017A05ED0000167F7 /* ViewControllers */,
 			);
 			path = LocalList;
 			sourceTree = "<group>";
@@ -129,8 +145,6 @@
 		ABD8746117A055F1000167F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABD8746917A055F1000167F7 /* AppDelegate.h */,
-				ABD8746A17A055F1000167F7 /* AppDelegate.m */,
 				ABD8746217A055F1000167F7 /* LocalList-Info.plist */,
 				ABD8746317A055F1000167F7 /* InfoPlist.strings */,
 				ABD8746617A055F1000167F7 /* main.m */,
@@ -145,6 +159,8 @@
 		ABD8747F17A05EAD000167F7 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				AB47B27A17A1B73700B3F382 /* List.h */,
+				AB47B27B17A1B73700B3F382 /* List.m */,
 				ABD8747217A055F1000167F7 /* LocalList.xcdatamodeld */,
 				ABDF3EA617A17BCB004BC5BD /* Items.h */,
 				ABDF3EA717A17BCB004BC5BD /* Items.m */,
@@ -157,16 +173,24 @@
 		ABD8748017A05ED0000167F7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ABD8748117A05F37000167F7 /* StoresTableViewController.h */,
-				ABD8748217A05F37000167F7 /* StoresTableViewController.m */,
-				ABD8748417A06C28000167F7 /* PlaceSearchTableViewController.h */,
-				ABD8748517A06C28000167F7 /* PlaceSearchTableViewController.m */,
-				ABF4C88E17A0CF4600B23C93 /* PlaceDetailTableViewController.h */,
-				ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */,
 				ABDF3EA917A17C70004BC5BD /* ItemsTableViewController.h */,
 				ABDF3EAA17A17C70004BC5BD /* ItemsTableViewController.m */,
 				ABDF3EAC17A18414004BC5BD /* ItemViewController.h */,
 				ABDF3EAD17A18414004BC5BD /* ItemViewController.m */,
+				ABE70A3017A313EA00506C90 /* ListItemDetailTableViewController.h */,
+				ABE70A3117A313EA00506C90 /* ListItemDetailTableViewController.m */,
+				AB47B27D17A1B82B00B3F382 /* ListTableViewController.h */,
+				AB47B27E17A1B82B00B3F382 /* ListTableViewController.m */,
+				ABF4C88E17A0CF4600B23C93 /* PlaceDetailTableViewController.h */,
+				ABF4C88F17A0CF4600B23C93 /* PlaceDetailTableViewController.m */,
+				ABD8748417A06C28000167F7 /* PlaceSearchTableViewController.h */,
+				ABD8748517A06C28000167F7 /* PlaceSearchTableViewController.m */,
+				ABD8748117A05F37000167F7 /* StoresTableViewController.h */,
+				ABD8748217A05F37000167F7 /* StoresTableViewController.m */,
+				ABE70A3417A31E1F00506C90 /* SelectItemTableViewController.h */,
+				ABE70A3517A31E1F00506C90 /* SelectItemTableViewController.m */,
+				ABE70A3717A31E3E00506C90 /* SelectStoreTableViewController.h */,
+				ABE70A3817A31E3E00506C90 /* SelectStoreTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -178,6 +202,15 @@
 				ABD8748C17A07C15000167F7 /* Places.m */,
 			);
 			name = DataObjects;
+			sourceTree = "<group>";
+		};
+		ABE70A3317A3195B00506C90 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ABD8748717A06EF7000167F7 /* PlaceService.h */,
+				ABD8748817A06EF7000167F7 /* PlaceService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +291,11 @@
 				ABDF3EA817A17BCB004BC5BD /* Items.m in Sources */,
 				ABDF3EAB17A17C70004BC5BD /* ItemsTableViewController.m in Sources */,
 				ABDF3EAE17A18414004BC5BD /* ItemViewController.m in Sources */,
+				AB47B27C17A1B73700B3F382 /* List.m in Sources */,
+				AB47B27F17A1B82B00B3F382 /* ListTableViewController.m in Sources */,
+				ABE70A3217A313EA00506C90 /* ListItemDetailTableViewController.m in Sources */,
+				ABE70A3617A31E1F00506C90 /* SelectItemTableViewController.m in Sources */,
+				ABE70A3917A31E3E00506C90 /* SelectStoreTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "StoresTableViewController.h"
 #import "ItemsTableViewController.h"
+#import "ListTableViewController.h"
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -18,12 +19,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     UITabBarController *tabBarController = (UITabBarController *) self.window.rootViewController;
+    
     UINavigationController *navigationController = (UINavigationController *) [[tabBarController viewControllers] objectAtIndex:0];
     StoresTableViewController *storeTableViewController = (StoresTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
     storeTableViewController.managedObjectContext = self.managedObjectContext;
+    
     navigationController = (UINavigationController *)[[tabBarController viewControllers] objectAtIndex:1];
     ItemsTableViewController *itemsTableViewController = (ItemsTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
     itemsTableViewController.managedObjectContext = self.managedObjectContext;
+    
+    navigationController = (UINavigationController *)[[tabBarController viewControllers] objectAtIndex:2];
+    ListTableViewController *listTableViewController = (ListTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    listTableViewController.managedObjectContext = self.managedObjectContext;
+    
     return YES;
 }
 
