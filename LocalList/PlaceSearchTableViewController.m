@@ -20,6 +20,8 @@
     PlaceService *placeService;
     NSMutableArray *keyArray;
     NSMutableArray *dataArray;
+    CLLocationManager *locationManager;
+    NSString *locationString;
 }
 @synthesize placeSearchBar = _placeSearchBar;
 @synthesize tableView = _tableView;
@@ -54,6 +56,8 @@ static NSString *kType = @"type";
     self.placeSearchBar.delegate = self;
     self.tableView.delegate = self;
     resultArray = [[NSMutableArray alloc] initWithCapacity:0];
+    locationManager = [[CLLocationManager alloc] init];
+    [self startLocation];
 }
 
 - (void)didReceiveMemoryWarning
@@ -160,22 +164,35 @@ static NSString *kType = @"type";
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [searchBar resignFirstResponder];
     //resultArray = [[NSArray alloc] initWithObjects:searchBar.text, searchBar.text, searchBar.text, nil];
-    [resultArray removeAllObjects];
-    [self generateQueryWithText:searchBar.text withNextPageToken:nil];
+    if ( ![CLLocationManager locationServicesEnabled] ) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Location Service Disbale" message:@"Please enbale location service from settings" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    } else if ([locationString isEqualToString:@"NA"]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Location Accuracy" message:@"Please try again after few seconds" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }else {
+        [resultArray removeAllObjects];
+        [self generateQueryWithText:searchBar.text withNextPageToken:nil];
+    }
     
     //[self.tableView reloadData];
 }
 
 - (void) generateQueryWithText:(NSString *)query withNextPageToken:(NSString *)nextPageToken {
-    NSString *location = @"43.472847,-80.562613";
+    NSString *location = locationString;
     if ( nextPageToken == nil ) {
         [dataArray removeAllObjects];
         [keyArray removeAllObjects];
         keyArray = [[NSMutableArray alloc] initWithObjects:kLocation, kRankBy, kSensor, kName, kType, nil];
-        dataArray = [[NSMutableArray alloc] initWithObjects:location, @"distance", @"false", query, @"grocery_or_supermarket", nil];
+        dataArray = [[NSMutableArray alloc] initWithObjects:location, @"distance", @"true", query, @"grocery_or_supermarket", nil];
     } else {
-        [keyArray addObject:@"pagetoken"];
-        [dataArray addObject:nextPageToken];
+        if ( [dataArray count] == 6 ) {
+            [dataArray removeObjectAtIndex:5];
+            [dataArray addObject:nextPageToken];
+        } else {
+            [keyArray addObject:@"pagetoken"];
+            [dataArray addObject:nextPageToken];
+        }
     }
     NSDictionary *queryData = [[NSDictionary alloc] initWithObjects:dataArray forKeys:keyArray];
     if ( placeService == nil ) {
@@ -212,5 +229,33 @@ static NSString *kType = @"type";
     }
 }
 
+#pragma marks Location Manager Method
 
+- (void)startLocation {
+    if ( [CLLocationManager locationServicesEnabled] ) {
+        locationManager.delegate = self;
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+        [locationManager startUpdatingLocation];
+    } else {
+        [self performSelector:@selector(startLocation) withObject:nil afterDelay:5];
+    }
+}
+
+- (void) locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+    
+    if ( [newLocation.timestamp timeIntervalSinceNow] < -5.0 ) {
+        locationString = @"NA";
+        return;
+    }
+    
+    if ( newLocation.horizontalAccuracy < 0 ) {
+        locationString = @"NA";
+        return;
+    }
+    locationString = [self locationToString:newLocation];
+}
+
+- (NSString *)locationToString:(CLLocation *)location {
+    return [NSString stringWithFormat:@"%f,%f", location.coordinate.latitude, location.coordinate.longitude];
+}
 @end

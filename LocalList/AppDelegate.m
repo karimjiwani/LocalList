@@ -10,6 +10,7 @@
 #import "StoresTableViewController.h"
 #import "ItemsTableViewController.h"
 #import "ListTableViewController.h"
+#import "GMapsViewController.h"
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -18,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [GMSServices provideAPIKey:@"AIzaSyADLVowzsFCQadsEh395aCZC0c7u06dzS4"];
     UITabBarController *tabBarController = (UITabBarController *) self.window.rootViewController;
     
     UINavigationController *navigationController = (UINavigationController *) [[tabBarController viewControllers] objectAtIndex:0];
@@ -31,6 +33,10 @@
     navigationController = (UINavigationController *)[[tabBarController viewControllers] objectAtIndex:2];
     ListTableViewController *listTableViewController = (ListTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
     listTableViewController.managedObjectContext = self.managedObjectContext;
+    
+    navigationController = (UINavigationController *)[[tabBarController viewControllers] objectAtIndex:3];
+    GMapsViewController *gMapsViewController = (GMapsViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    gMapsViewController.managedObjectContext = self.managedObjectContext;
     
     return YES;
 }

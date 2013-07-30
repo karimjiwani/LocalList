@@ -10,7 +10,7 @@
 
 
 @implementation PlaceService {
-    NSURL *placesURL;
+    
 }
 
 static NSString *kPlaceKey = @"key=AIzaSyA7840APP8ruMRWXGc5F3nEzs0qcFL2Fhc";

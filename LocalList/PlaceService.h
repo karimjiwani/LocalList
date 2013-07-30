@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PlaceService : NSObject
+@interface PlaceService : NSObject {
+    NSURL *placesURL;
+}
 - (void)setPlaceQuery:(NSDictionary *)options withSelector:(SEL)selector withDelegate:(id)delegate;
 - (void)setPlaceDetailQuery:(NSString *)referenceString withSelector:(SEL)selector withDelegate:(id)delegate;
 - (void)retereivePlaces:(SEL)selector withDelegate:(id)delegate;
